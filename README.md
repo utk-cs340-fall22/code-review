@@ -1,6 +1,6 @@
-# Assignment 4: Code Review (Due Thursday Sept 15)
+# Assignment 3: Code Review (Due Monday 2/21)
 
-Review the source code in the repo github.com/utk-cs340-fall22/code-review. 
+Review the source code in the repo github.com/utk-cs340-spring22/code-review. 
 Use the style guide in the file named style-guide.txt. 
 Identify and fix the issues in the source code files that violate the
 style guide. There are 2 parts to this assignment:
@@ -20,7 +20,7 @@ in which case you can just list the first line. Or it may pertain to
 a whole file, in which case you can say something like:   
   > Base64.c: all indentations should be changed from 2 spaces to 4 spaces.
 
-In some cases, there is a block of code that is wrong, for example, the
+In come cases, there is a block of code that is wrong, for example, the
 indentation may be wrong. List the block as 1 item with the line number of
 the first bad line. Do not list as one bad item per line. For example, if
 all the cases in a switch statement are indented wrong, list that as one
@@ -49,9 +49,10 @@ but it is recommended that you use one of these two.
    own git hub acccount. Place the fixed files (including the Makefile)
    and issues.txt in your repo.
 - Give read permission to the TAs and myself. The github ids are
-   davidalanreid, j-thy, vvbhupatijraju, adam-mcdaniel. To give read permission,
+   davidalanreid, dlee865, and vvbhupatijraju. To give read permission,
    select settings->Collaborators->Add People in your repo.
-- When finished, submit the assignment in Canvas by submitting a link to your repo with the fixed code.
+- Open an issue in the utk-cs340-spring22/code-review repo when finished
+   and put a note in the issue with a link to your repo with the fixed code.
 
 There are at least 35 issues in the code. Grading will be as follows:
 - 1 point for each issue found up to 35 points.
