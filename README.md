@@ -11,8 +11,8 @@ Create a file named issues.txt to identify the issues. In that file, give the
 filename, line number, and a very short description of the issue and the fix.
 List the issues in the order they appear in the file and group issues in 
 the same file together. For example:  
-  > main.c line 11: { should be on the next line.  
-  > main.c line 15: multi-line comment format should follow correct style.
+  > main.c line 12: { should be on the next line.  
+  > main.c line 18: multi-line comment format should follow correct style.
 
 In some cases, a line number is not needed; for example, if a filename
 should be changed. Sometimes a fix refers to a block of code,
@@ -25,7 +25,7 @@ indentation may be wrong. List the block as 1 item with the line number of
 the first bad line. Do not list as one bad item per line. For example, if
 all the cases in a switch statement are indented wrong, list that as one
 item like this:
-  > main.c line 51 and following: indentation is wrong on case statements.
+  > main.c line 56 and following: indentation is wrong on case statements.
 
 Note that you don't have to give much detail about how to fix it; the
 main point of a code review is to find the problems not fix them. But it
