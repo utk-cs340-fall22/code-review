@@ -5,19 +5,23 @@
 
 #include "main.h"
 
-/* This is the max size of a file */
 #define MAX_FILE_SIZE 5000
 
-// print usage line
-static void usage() {
-    /* print a line to show the correct command line args */
+/*
+ * Prints usage line.
+*/
+static void 
+usage() 
+{
     printf("usage myencode <e|d> <uu|base64> <input filename>");
     printf("\n");
 }
 
-/* Take the contents of a file and convert it to base64 
- * or uuencoded format and also convert from base64 or uuencoded 
- * formate back to the original */
+/* 
+ * Takes the contents of a file and convert it to base64 
+ * or uuencoded format and also converts from base64 or uuencoded 
+ * format back to the original.
+ * */
 int
 main (int argc, char **argv)
 {
@@ -33,10 +37,9 @@ main (int argc, char **argv)
     char buffer[MAX_FILE_SIZE];
 
 
-    /* check number command line args, exit if there is an error */
     if (argc != 4) {
        usage();
-       exit(0);
+       exit(1);
     }
 
     direction = argv[1][0];
@@ -66,8 +69,7 @@ main (int argc, char **argv)
             exit(1);
         }
     } else if (strcmp(type, "base64") == 0) {
-        for (i = 0; i < MAX_FILE_SIZE; i++)
-        {
+        for (i = 0; i < MAX_FILE_SIZE; i++) {
             int c = getc(fp);
 
             if (c == EOF)
@@ -77,8 +79,7 @@ main (int argc, char **argv)
             }
 
             buffer[i] = c;
-        }
-        switch (direction) {
+        } switch (direction) {
         case 'e':
             base64_encoded = base64_encode(buffer, strlen(buffer));
             printf("%s\n", base64_encoded);
@@ -87,9 +88,11 @@ main (int argc, char **argv)
             base64_decoded = base64_decode(buffer);
             printf("%s\n", base64_decoded);
             break;
+		default:
+			usage();
+			exit(1);
         }
     }
 
-    /* Exit 0 on success */
-    exit (0);
+    exit(0);
 }
