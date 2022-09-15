@@ -1,0 +1,38 @@
+main.h: no #define guards
+main.h: function prototypes should not have variable names
+main.h: function names should have the first letter of each word capitalized
+main.c: unnecessary .h file
+main.c: all comments should have proper capitalization
+main.c line 11: inconsistent comment style
+main.c line 12: function name should have first letter capitalized
+main.c line 12: function return type should be on the line before the function name
+main.c line 20: misspelled "format"
+main.c line 30: variable name should separate words with "_"
+main.c line 36: comma should be a semicolon
+main.c line 36: missing the word "of" between "number" and "command"
+main.c line 37: code inside if statement should be indented one more space
+main.c line 74: curly brace should be up one line after the if statement
+main.c line 81: switch statement missing default case
+main.c line 94: obvious comment
+Base64.c: file should have an associated .h file
+Base64.c: all comments should have proper capitalization
+Base64.c: all indents should be in increments of 4 spaces
+Base64.c line 42: line length is greater than 80 characters
+Base64.c line 55: returning -1 on success
+Base64.c line 59: first and last line of multi-line comment should be without text
+Base64.c line 110: parameter name should be all lowercase words separated with an underscore
+Base64.c line 135: misspelled "Decode"
+Base64.c line 148: "unsigned" instead of "unsigned int"
+uu.c: file should have an associated .h file
+uu.c: all comments should have proper capitalization
+uu.c line 58: register specifier should not be used
+uu.c line 68: all code in for loop isn't indented
+uu.c line 69: curly brace indented two spaces too much
+uu.c line 90: extra curly brace
+uu.c line 121: no underscore between words in variable name
+uu.c line 127: should be indented by one more space
+uu.c line 136: shouldn't be spaces between parentheses and if statement condition
+uu.c line 182: if statement should have curly braces
+uu.c line 183: code inside if statement should be indented
+uu.c line 193: else statement should start on previous line after the }
+uu.c line 211: shouldn't be parentheses around simple return value
